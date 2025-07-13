@@ -17,6 +17,7 @@ body {
   padding: 20px 40px;
   margin-bottom: 60px;
   height: 80px;
+  position: relative;
 }
 .post-header {
   margin-bottom: 40px;
@@ -51,6 +52,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 h3 {
   font-size: 30px;
@@ -116,18 +118,23 @@ aside {
 /* li:first-child {
   color: red;
 } */
-li:nth-child(odd) {
+/* li:nth-child(odd) {
   color: rgb(222, 8, 8);
 }
 li:nth-child(even) {
   color: rgb(186, 94, 94);
-}
+} */
 
 /* Misconception : This wont works as first chilld is header in article */
 /* article p:first-child {
   color: green;
 } */
 /* Styling hyperlinks LVHA */
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
 a:link {
   color: #1098ad;
   text-decoration: none;
@@ -143,4 +150,32 @@ a:hover {
 a:active {
   background-color: #000;
   font-style: italic;
+}
+
+.like-button {
+  padding: 10px;
+  position: absolute;
+  top: -1pxpx;
+  left: -1px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  padding: 5px;
+}
+
+/* h3 + p::first-line {
+  color: red;
+} */
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }

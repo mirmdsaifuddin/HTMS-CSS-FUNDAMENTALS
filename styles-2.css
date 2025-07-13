@@ -15,6 +15,7 @@ body {
 }
 .product {
   border: 5px solid black;
+  position: relative;
 }
 .product-title {
   text-align: center;
@@ -74,4 +75,19 @@ body {
   color: black;
   background-color: white;
   border-top: 4px solid black;
+}
+.sale-button {
+  position: absolute;
+  top: -15px;
+  left: -20px;
+  color: #f7f7f7;
+  font-weight: bold;
+  padding: 3px 10px;
+  background-color: red;
+  letter-spacing: 2px;
+  border: none;
+}
+a::after {
+  content: #000;
+  width: 2px;
 }
